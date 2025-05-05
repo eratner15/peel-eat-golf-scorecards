@@ -1,0 +1,49 @@
+/* Common styles for golf game scorecards */
+.td-std {
+    @apply px-4 py-2 text-center border border-gray-300;
+}
+
+.input-std {
+    @apply w-16 text-center;
+}
+
+.input-par {
+    @apply bg-gray-50;
+}
+
+.input-score {
+    @apply bg-white;
+}
+
+/* Player-specific cell colors */
+.p1-cell {
+    @apply bg-blue-50;
+}
+
+.p2-cell {
+    @apply bg-green-50;
+}
+
+.p3-cell {
+    @apply bg-yellow-50;
+}
+
+.p4-cell {
+    @apply bg-purple-50;
+}
+
+/* Input focus styles */
+input:focus, select:focus {
+    @apply outline-none ring-2 ring-blue-500 border-blue-500;
+}
+
+/* Responsive table */
+@media (max-width: 768px) {
+    .td-std {
+        @apply px-2 py-1 text-sm;
+    }
+    
+    .input-std {
+        @apply w-12;
+    }
+} 
