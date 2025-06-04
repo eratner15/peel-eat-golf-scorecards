@@ -287,11 +287,11 @@ function updateVegas() {
     } else if (diff > 0) {
         settlementText = `Team 2 owes Team 1 ${Math.abs(diff)} points`;
         settlementAmount = Math.abs(diff);
-        winner = 'Team 2';
+        winner = 'Team 1';
     } else {
         settlementText = `Team 1 owes Team 2 ${Math.abs(diff)} points`;
         settlementAmount = Math.abs(diff);
-        winner = 'Team 1';
+        winner = 'Team 2';
     }
     
     currentRoundState.settlement = {
